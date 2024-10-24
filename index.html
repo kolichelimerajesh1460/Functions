@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Functions</h1>
+<h2>1.Functions without parameters</h2>
+<h2>2.Functions with parameters</h2>
+<h2>3.Functions with return statements</h2>
+<h2>4.Combining Functions</h2>
+<h2>5.Default Parameters</h2>
+<body>
+    <script>
+//1.Functions without parameters
+        function greet()
+        {
+            console.log("Hello World")
+        }
+        greet()
+
+//2.Functions with parameters
+        function addNumber(a,b)
+        {
+            const sum=a+b;
+            return sum;
+        }
+        console.log(addNumber(10,20))
+
+//3.Functions with return statements
+        function Multiply(x,y)
+        {
+            return x*y
+        }
+        let value = Multiply(5,4)
+        console.log(value)
+
+//4.Combining Functions
+        function Multiply(a,b)
+        {
+            return a*b;
+        }
+        function calculateRectangleArea(length,width)
+        {
+        const area=Multiply(length,width)
+        return area;
+        }
+        const length=3;
+        const width=20;
+        const area=calculateRectangleArea(length,width)
+        console.log("The area of the rectangle is:",area)
+
+ //5.Default Parameters
+    function greetUser(name = "Guest")
+     {
+    console.log(`Hello, ${name}!`);
+     }
+    // Calling the function without passing an argument
+    greetUser();
+    // Calling the function and passing an argument
+    greetUser("Rajesh");
+    </script>
+</body>
+</html>
